@@ -1,0 +1,32 @@
+<h1>Bravo ti se logna!</h1>
+<input placeholder="Enter country name" list="suggestions" />
+<datalist id='suggestions'>
+</datalist> 
+
+<div id='countriesContainer'>
+    <table>
+        <thead>
+            <tr>
+                <th key="">Kartinka</th>
+                <th key="name" order='asc'>name</th>
+                <th key="region" order='asc'>region</th>
+                <th key="capital" order='asc'>capital</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each countries}}
+                <tr>
+                    <td>
+                        <a href="#page=detail_{{alpha3Code}}">
+                            <img width="100" src="{{flag}}"/>
+                        </a>
+                    </td>
+                    <td>{{name}}</td>
+                    <td>{{region}}</td>
+                    <td>{{capital}}</td>
+                </tr>  
+            {{/each}}
+        </tbody>
+    </table>
+   
+</div>

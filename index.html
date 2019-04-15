@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countries</title>
+    <script src='node_modules/jquery/dist/jquery.min.js'></script>
+    <script src='node_modules/handlebars/dist/handlebars.min.js'></script>
+    <script src='js/common/countriesModel.js'></script>
+    
+    <script src='js/login/userModel.js'></script>
+    <script src='js/detail/detailController.js'></script>
+    <script src='js/home/homeController.js'></script>
+    <script src='js/login/loginController.js'></script>
+    <script src='js/router.js'></script>
+
+    <style>
+        th {
+            cursor: pointer;
+        }
+        th:first-of-type {
+            cursor: not-allowed;
+        }
+
+        th[order=asc]::after {
+            content: '▼'
+        }
+        th[order=desc]::after {
+            content: '▲'
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Countries</h1>
+    </header>
+    <main>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>

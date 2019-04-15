@@ -1,0 +1,25 @@
+<div>
+    <img width="100" src="{{flag}}"/>
+    <h3>{{name}}</h3>
+    <p>Currencies:</p>
+    <ul>
+        {{#each currencies}}
+            <li>
+                <span>{{name}}</span>
+                <strong>{{symbol}}</strong>
+            </li>
+        {{/each}}
+    </ul>
+
+    <p>{{area}} km<sup>2</sup></p>
+    <p>{{population}} ☻</p>
+
+    <div>
+        <textarea name="" id="textarea" cols="30" rows="10">
+            {{impresssions}}        
+        </textarea>
+        <button id='add'>Add my vpechatleniq</button>
+    </div>
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q={{name}}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+</div>
